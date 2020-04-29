@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignUpSecond"
+    android:background="@color/colorYellowDark"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="166dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maintenance" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="374dp"
+        android:layout_height="617dp"
+        android:background="@drawable/bt_uifb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/blackops"
+        android:text="Fixing Man"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/breeserifregular"
+        android:text="Sign Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2" /><![CDATA[
+
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:rotation="90"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toStartOf="@+id/etStore_Name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_store_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/ic_add_location_black_24dp" />
+
+    <EditText
+        android:id="@+id/etStore_Name"
+        android:layout_width="252dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="name shop"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="252dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="45dp"
+        android:text="ประกอบไปด้วย บ้านเลขที่ ,ชื่อหมู่บ้าน/ตึก/อาคาร ,ตำบล/แขลง , อำเภอ , จังหวัด ,หมายเลขไปรษณีย์ "
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/etAddress"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/etAddress" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="252dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="address shop"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etStore_Name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/etStore_Name" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="219dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/bg_yellow"
+        android:onClick="signup"
+        android:text="SignUp"
+        app:layout_constraintEnd_toEndOf="@+id/etAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/tvLongitude" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="79dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="4dp"
+        android:text="latitude"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLatitude"
+        app:layout_constraintEnd_toStartOf="@+id/tvLatitude"
+        app:layout_constraintTop_toTopOf="@+id/tvLatitude"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="24dp"
+        android:text="lat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="78dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="12dp"
+        android:text="longitude"
+        app:layout_constraintEnd_toEndOf="@+id/tv1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="81dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="12dp"
+        android:text="long"
+        app:layout_constraintStart_toStartOf="@+id/tvLatitude"
+        app:layout_constraintTop_toBottomOf="@+id/tvLatitude" />
+
+    <Button
+        android:id="@+id/btn_GetLocation"
+        android:layout_width="101dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:text="Get Location"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLongitude"
+        app:layout_constraintStart_toEndOf="@+id/tvLatitude"
+        app:layout_constraintTop_toTopOf="@+id/tvLatitude"
+        app:layout_constraintVertical_bias="0.0"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
